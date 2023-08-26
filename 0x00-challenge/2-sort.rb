@@ -1,18 +1,18 @@
 ###
 #
-#  Sort integer arguments (ascending) 
+#  Integer arguments are sorted in ascending order 
 #
 ###
 
 result = []
 ARGV.each do |arg|
-    # skip if not integer
+    # If it is not an integer, then skip
     next if arg !~ /^-?[0-9]+$/
 
-    # convert to integer
+    # Converted into an integer
     i_arg = arg.to_i
     
-    # insert result at the right position
+    # Result is inserted at the right position
     is_inserted = false
     i = 0
     l = result.size

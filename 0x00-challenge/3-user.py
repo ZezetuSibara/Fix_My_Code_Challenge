@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
- User Model
+ A User Model
 """
 import hashlib
 import uuid
@@ -8,24 +8,24 @@ import uuid
 
 class User():
     """
-    User class:
-    - id: public string unique (uuid)
-    - password: private string hash in MD5
+    A User class:
+    - id: is a public string unique (uuid)
+    - password: is a private string hash in MD5
     """
 
     __password = None
 
     def __init__(self):
         """
-        Initialize a new user:
-        - assigned an unique `id`
+        A new user is Initialized:
+        - a unique `id` is assigned
         """
         self.id = str(uuid.uuid4())
 
     @property
     def password(self):
         """
-        Password getter
+        Used to get a Password
         """
         return self.__password
 
@@ -33,9 +33,9 @@ class User():
     def password(self, pwd):
         """
         Password setter:
-        - `None` if `pwd` is `None`
-        - `None` if `pwd` is not a string
-        - Hash `pwd` in MD5 before assign to `__password`
+        - `None` if there is no `pwd`
+        - `None` if `pwd` is not seen as a string
+        - Hash `pwd` before assigning to `__password`
         """
         if pwd is None or type(pwd) is not str:
             self.__password = None
@@ -45,10 +45,10 @@ class User():
     def is_valid_password(self, pwd):
         """
         Valid password:
-        - `False` if `pwd` is `None`
-        - `False` if `pwd` is not a string
-        - `False` if `__password` is `None`
-        - Compare `__password` and the MD5 value of `pwd`
+        - `False` if there is no `pwd`
+        - `False` if `pwd` is not seen as a string
+        - `False` if there is no `__password`
+        - Compare `__password` with the value of `pwd`
         """
         if pwd is None or type(pwd) is not str:
             return False

@@ -1,12 +1,11 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
+#include <string.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
+ * main - Holberton School students' code is checked.
+ * Return: EXIT_SUCCESS Always.
  */
 int main(void)
 {

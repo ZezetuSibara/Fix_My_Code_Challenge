@@ -1,11 +1,10 @@
 #include <string.h>
-#include <stdlib.h>
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * free_dlistint - Free a list
- *
- * @head: A pointer to the first element of the list
+ * free_dlistint - A list that is free
+ * @head: The first element pointer
  */
 void free_dlistint(dlistint_t *head)
 {

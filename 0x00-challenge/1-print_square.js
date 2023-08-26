@@ -1,9 +1,8 @@
-!/usr/bin/node
+#!/usr/bin/node
 /*
-    Print a square with the character #
+    A square with a character is printed #
     
-    The size of the square must be the first argument 
-    of the program.
+    The first argument of the program must be the square size.
 */
 
 
@@ -14,7 +13,7 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-size = parseInt(process.argv[2], 10)
+size = parseInt(process.argv[2], 16)
 
 for (let i = 0 ; i < size ; i ++) {
     for (let j = 0 ; j < size ; j ++) {

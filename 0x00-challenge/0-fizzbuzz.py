@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-""" FizzBuzz
+""" The FizzBuzz Task
 """
 import sys
 
 
 def fizzbuzz(n):
     """
-    FizzBuzz function prints numbers from 1 to n separated by a space.
+    Prints numbers from 1 to n separated by a space.
 
-    - For multiples of three print "Fizz" instead of the number and for
-      multiples of five print "Buzz".
-    - For numbers which are multiples of both three and five print "FizzBuzz".
+    - Multiples of three print "Fizz"
+    - Multiples of five print "Buzz".
+    - Multiples of both three and five print "FizzBuzz".
     """
     if n < 1:
         return
